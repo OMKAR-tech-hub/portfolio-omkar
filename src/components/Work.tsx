@@ -5,32 +5,34 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    title: "Brain Tumor Detection",
+    description:"Deep learning model to detect and classify brain tumors using medical imaging.",
+    tools: "Python, TensorFlow, Keras, OpenCV",
+    category: "AI/ML Project",
+    image: "/images/barin.png",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
+    title: "Lung Cancer Detection",
+    description:"AI system for early detection of lung cancer using scan analysis.",
+    tools: "PyTorch, Computer Vision, Medical Imaging",
+    category: "AI/ML Project",
+    link: "https://huggingface.co/spaces/adi185/lung-cancer-detection",
     image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
   },
   {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
+    title: "Startup Ecosystem Platform",
+    description:"Full-stack platform connecting startups and investors.",
+    tools: "React, Node.js, PostgreSQL",
+    category: "Full Stack Project",
+    link: "https://startup-ecosystem-one.vercel.app/",
+    image: "/images/startup.png",
   },
   {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
+    title: "Suraksha Netra",
+    description:"AI surveillance system detecting fire, drones, and intrusions using YOLOv8.",
+    tools: "YOLOv8, PyTorch, Edge AI",
+    category: "AI + IoT Project",
+    image: "/images/survi.jpg",
   },
 ];
 
@@ -110,6 +112,23 @@ const Work = () => {
                           <span className="tools-label">Tools & Features</span>
                           <p>{project.tools}</p>
                         </div>
+                        {project.link && (
+  <a href={project.link} target="_blank" rel="noopener noreferrer">
+    <button
+      style={{
+        marginTop: "12px",
+        padding: "8px 16px",
+        background: "#00ffff",
+        border: "none",
+        borderRadius: "6px",
+        cursor: "pointer",
+        fontWeight: "bold",
+      }}
+    >
+      Live Demo 🚀
+    </button>
+  </a>
+)}
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
